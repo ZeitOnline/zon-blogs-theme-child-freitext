@@ -1,0 +1,127 @@
+.teaser-big {
+  margin: 15px 15px 0 15px;
+  padding: 15px;
+  position: relative;
+  background-color: white;
+  max-width: inherit;
+
+  &:hover {
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  @include bp(large) {
+    float: left;
+    width: 477px;
+    margin-right: 0;
+  }
+  &:nth-child(even) {
+    @include bp(large) {
+      float: right;
+      margin-right: 15px;
+    }
+  }
+}
+
+.one-post-only {
+  .teaser-big {
+    @include bp(large) {
+      float: none;
+      margin: 0 auto;
+      max-width: 650px;
+      width: 100%;
+    }
+  }
+}
+
+.teaser-big__entry-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+  float: left;
+}
+.teaser-big__entry-header {
+  margin-top: 15px;
+}
+
+.teaser-big__entry-title {
+  @extend .zb-text-headline;
+  margin-top: 29px;
+  letter-spacing: 0.02em;
+  a {
+    color: $color__text-headline;
+    text-decoration: none;
+  }
+  line-height: 1.2;
+}
+.teaser-big__entry-content {
+  @extend .zb-text-paragraph;
+  color: #313131;
+  a {
+    color: $color__text-paragraph;
+  }
+  .more-link, .more-link:visited {
+    text-decoration: none;
+    color: $color__link;
+    &:after {
+      content: "…";
+    }
+    .meta-nav {
+      display: none;
+    }
+  }
+}
+.teaser-big__entry-meta {
+  @extend .zb-text-meta;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  float: left;
+  width: 80%;
+  padding-left: 10px;
+  a {
+    color: $color__text-paragraph;
+    text-decoration: none;
+  }
+  
+  @include bp(large) {
+    width: 80%;
+    padding-left: 10px;
+  }
+}
+
+.byline {
+  font-weight: bold;
+  color: $color__text-paragraph;
+  letter-spacing: 0.02em;
+  @include bp(large) {
+   font-weight: bold; 
+   float: none;
+  }
+}
+.zb-posted-on {
+  @include clearfix();
+  margin-bottom: 10px;
+  @include bp(large) {
+    float: none;
+  }
+}
+
+.teaser-big__entry-footer {
+  @extend .zb-text-meta;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  a {
+    color: $color__text-meta;
+  }
+}
+
+
+.posted-on__anchor, .posted-on__anchor:visited {
+  @extend .zb-text-meta;
+  color: $color__text-meta;
+  text-decoration: none;
+  font-family: $font__second;
+  font-style: italic;
+}

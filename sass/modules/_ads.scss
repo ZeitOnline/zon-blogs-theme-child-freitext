@@ -1,0 +1,17 @@
+.ad-wrapper-fullwidth {
+	background-color: transparent;
+	margin: 15px 0 0;
+
+	@include bp(large) {
+		float: left;
+		margin: 15px 0 0 15px;
+		width: 477px;
+	}
+}
+
+.ad-wrapper-mobile {
+	@include bp(large) {
+		display: none;
+	}
+}
+
