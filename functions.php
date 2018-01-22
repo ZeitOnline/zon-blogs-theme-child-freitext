@@ -168,7 +168,7 @@ function zb_author_save( $post_id ) {
 		update_post_meta( $post_id, 'zb_author_box', esc_attr( $_POST['zb_author_box'] ) );
 	else
 		update_post_meta( $post_id, 'zb_author_box', null );
-		
+
   if ( isset( $_POST['zb_author_box_paragraph'] ) )
 		update_post_meta( $post_id, 'zb_author_box_paragraph', esc_attr( $_POST['zb_author_box_paragraph'] ) );
 }
