@@ -42,13 +42,13 @@ do_action( 'wp_body_start' );
 				<?php if( is_front_page() ): ?>
 				<h1 class="site-branding__site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo site_url() ?>/wp-content/themes/zb-child-freitext/images/freitext.svg" alt="freitext" width="300" height="auto" />
+						<img src="<?php echo get_template_directory_uri() ?>/images/freitext.svg" alt="freitext" width="300" height="auto" />
 					</a>
 				</h1>
 				<?php else: ?>
 				<h2 class="site-branding__site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo site_url() ?>/wp-content/themes/zb-child-freitext/images/freitext.png" alt="freitext" width="300" height="auto" />
+						<img src="<?php echo get_template_directory_uri() ?>/images/freitext.png" alt="freitext" width="300" height="auto" />
 					</a>
 				</h2>
 				<?php endif; ?>
