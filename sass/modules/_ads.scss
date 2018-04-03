@@ -9,6 +9,13 @@
 	}
 }
 
+.ad-wrapper-breaking {
+	@include bp(large) {
+		clear: both;
+		padding-top: 1px;
+	}
+}
+
 .ad-wrapper-mobile {
 	@include bp(large) {
 		display: none;
