@@ -24,6 +24,9 @@ on console.
 
 ## Changes
 
+### 1.4.0
+* ZON-4509: Use relative font sizes (rem) in CSS
+
 ### 1.3.2
 * Add space befoe breaking ad slot
 
