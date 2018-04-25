@@ -21,7 +21,7 @@
 	</header><!-- .entry-header -->
   <div class="entry-content">
     <?php
-      zb_render_content_with_ads( apply_filters( 'the_content', get_the_content() ), zb_get_meta( 'zb_medium_rectangle_paragraph', 1 ) );
+      zb_render_content_with_ads( apply_filters( 'the_content', get_the_content() ), zb_get_meta( 'zb_medium_rectangle_paragraph', 1 ), zb_get_meta( 'zb_author_box_paragraph', 1 ), zb_get_meta( 'zb_author_box' ), zb_get_meta( 'zb_authorbox_fullwidth' ) );
     ?>
   </div><!-- .entry-content -->
 
